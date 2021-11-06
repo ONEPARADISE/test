@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARADISE - Control Your Game...</title>
+    <!-- libs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/splitting@0.11.3/splitting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./styles/media.css">
+</head>
+<body class="">
+    <div class="loading-window">
+        <div class="car">
+            <div class="strike"></div>
+            <div class="strike strike2"></div>
+            <div class="strike strike3"></div>
+            <div class="strike strike4"></div>
+            <div class="strike strike5"></div>
+            <div class="car-detail spoiler"></div>
+            <div class="car-detail back"></div>
+            <div class="car-detail center"></div>
+            <div class="car-detail center1"></div>
+            <div class="car-detail front"></div>
+            <div class="car-detail wheel"></div>
+            <div class="car-detail wheel wheel2"></div>
+        </div>
+    
+        <div class="text">
+            <span>Loading</span><span class="dots">...</span>
+        </div>
+    </div>
+
+
+    <div class="web-site d-none">
+
+    <header id="home">
+
+  
+        
+        <nav class="navbar container justify-content-around navbar-expand-lg navbar-dark d-none animate__backInDown">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto col-xl-10  col-lg-8 justify-content-around ">
+                        <li class="nav-item">
+                            <a class="navbar-link  active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" navbar-link  dload" aria-current="page" href="#"><b>Projects</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-link " aria-current="page" href="#info">Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-link " aria-current="page" href="#gadgets">Gadgets</a>
+                        </li>
+                        <form class="d-flex ">
+                            <button type="button" class="btn music " data-bs-toggle="modal" data-bs-target="#music">
+                                <i class="fas fa-music"></i> Music
+                            </button>
+                        </form>
+                      
+                    </ul>
+                   <!--  <form class="d-flex">
+                    
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+        <!-- Button trigger modal -->
+
+        
+        <!-- Modal -->
+        <div class="modal fade" id="music" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><img src="./img/RADIO STATION.png" alt="">  </h5><img src="./img/radiologo.png" alt="">
+                    </div>
+                    <div class="modal-body ">
+                        <div id="app"></div>
+                        <!-- 加载 cplayer 脚本 -->
+                        <script src="https://cdn.jsdelivr.net/npm/cplayer/dist/cplayer.min.js"></script>
+                        <script>
+                                let player = new cplayer({
+                                    element: document.getElementById('app'),
+                                    volume: '0.3',
+                                    showPlaylist: true,
+                                    playlist: [
+                                        {
+                                            src: './audio/Juicy.mp3',
+                                            poster: 'https://i.mp3party.net/system/artists/imgs/004/819/4819614/micro/micro_instasamka.png',
+                                            name: 'Juicy ',
+                                            artist: 'InstaSamka',
+                                            lyric: 'No Lyrics',
+                                            sublyric: 'No Sublyrics'
+                                        },
+                                        {
+                                            src: './audio/Zashey.mp3',
+                                            poster: './img/lastproject1.png',
+                                            name: 'Zashey',
+                                            artist: 'Gone.Fludd & Iroh',
+                                            lyric: 'No Lyrics',
+                                            sublyric: 'No Sublyrics'
+                                        },
+                                        {
+                                            src: './audio/Transportin.mp3',
+                                            poster: 'https://muzon-music.com/i/img/song/full/5874.jpg',
+                                            name: 'Transportin',
+                                            artist: 'Kodak Black',
+                                            lyric: 'No Lyrics',
+                                            sublyric: 'No Sublyrics'
+                                        },
+                                        
+                                        {
+                                            src: './audio/Sex-Sounds.mp3',
+                                            poster: 'https://m.muzofan.net/250/uploads/Lil_Tjay.jpg',
+                                            name: 'Lil Tjay',
+                                            artist: 'Sex Sounds',
+                                            lyric: 'No Lyrics',
+                                            sublyric: 'No Sublyrics'
+                                        },
+                                    ]
+                                    
+                                })
+                        </script>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn " data-bs-dismiss="modal">Close Radio</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="socials  animate__bounceInLeft d-none">
+                <div class=" follow">
+                    <h3>FOLLOW ON</h3>
+                    <a target="_blank" href="https://www.instagram.com/khamidovsk/?hl=ru"> <i class="fab fa-instagram"></i> Instagram</a> <br>
+                    <a target="_blank" href="https://twitter.com/khamidovsk"> <i class="fab fa-twitter"></i> Twitter</a> <br>
+                    <a target="_blank" href="https://steamcommunity.com/id/OneParadise/"><i class="fab fa-steam-symbol"></i> Steam</a>
+                </div>
+          
+
+
+            </div>
+
+            <div class="home col-xl-6 ">
+                <img class="d-none animate__fadeInDown hometitle" src="./img/home.png" alt="">
+                <h3 class="d-none animate__fadeInDown hometitle">Don't waste your time anymore. Get Started!</h3>
+                    <a href="#!" class="start voice d-none animate__fadeInUp">VOICE ASSISTANT</a>
+                    <p class="divider"></p>
+                    <a href="#!" class="download d-none animate__fadeInUp">GET Contact</a>
+                    
+            </div>
+            <img class="scroll d-none " src="./img/scrollDown.png" alt="">
+        </div>
+        
+    </header>
+ 
+    <section id="info">
+        <div class="container">
+            <img class="secimg d-none  animate__backInDown" width="200px" src="./img/info.png" alt="">
+        </div>
+        <div class="main">
+            
+            <div class="pre-text  col-xl-4">
+                <div class="block-1 d-none animate__backInLeft">
+
+                    <h2><img src="./img/info-text.png" alt=""> <i class="far fa-check-circle"></i></h2>
+                    <p>
+                        * Stylistic Web Design <br>
+                        * Coding/Editing<br>
+                        * Photoshop - external resources <br>
+                        * Plugins - external plugins<br>
+                        * Thematic
+                    </p>
+                </div>
+                <div class="title d-none">
+                    <span class="text write" data-splitting="lines">
+                        COME UP<br />
+                        CONSTRUCT<br />
+                        CREATE
+                    </span>
+                    <span aria-hidden="true" class="text laser" data-splitting="lines">
+                        COME UP<br />
+                        CONSTRUCT<br />
+                        CREATE
+                    </span>
+                </div>
+                <div class="block-1 pink d-none animate__backInLeft">
+                    <h2><img src="./img/info-text.png" alt=""> <i class="far fa-times-circle"></i></h2>
+                    <p>
+                        * Limited library <br>
+                        * Landings pages only <br>
+                        * Languages: EN/RU <br>
+                        * UP to 6 pages <br>
+                        * None 
+                    </p>
+                </div>
+            </div>
+           <a class="sultan col-xl-4 d-none animate__zoomIn" href=""></a> <!-- <img class="sultan" src="./img/Sultan.jpg" alt=""> -->
+            <div class="after-text col-xl-4 d-none animate__zoomIn">
+                <h2><img src="./img/map-text.png" alt=""></h2>
+
+                <h3>Other</h3>
+                <div class="progress d-none">
+                    <div class="progress-bar prg0 "  role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h3>Java Script & jQuery</h3>
+                <div class="progress d-none">
+                    <div class="progress-bar prg25 " role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h3>Web Designing</h3>
+                <div class="progress d-none">
+                    <div class="progress-bar prg50 " role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h3>CSS 3 & Bootstrap</h3>
+                <div class="progress d-none">
+                    <div class="progress-bar prg75 " role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h3>HTML 5</h3>
+                <div class="progress d-none">
+                    <div class="progress-bar prg100 " role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="d-flex" >
+                    <div>
+                        <a href="#!" class="personality"><i class="fas fa-mars"></i> MALE</a> <br>
+                        <a href="#!" class="personality"><i class="fas fa-map-marker-alt"></i> Tashkent, Uzbekistan</a>
+                    </div>
+                    <div>
+                        <a href="#!" class="personality"><i class="fas fa-file-signature"></i> Sultonbek Khamidov</a><br>
+                        <a href="#!" class="personality"><i class="far fa-calendar-alt"></i> 04.09.2003</a>
+                    </div>
+                </div>
+
+                
+            </div>
+           
+        </div>
+       
+
+
+
+
+
+
+        <div class="container info-end">
+
+            
+        </div>
+              
+    </section>
+
+    <section id="gadgets" class="gadgets">
+        <div class="container">
+            <img class="secimg d-none animate__zoomIn" width="280" src="./img/gadgets.png" alt="">
+            <h2 class="rawtitle rawname d-none animate__zoomInLeft"><img src="./img/accsessories-text.png" alt=""></h2>
+            
+            <div class="raw d-none gr animate__zoomIn">
+
+                <div class="card cast col-xl-3">
+                    <a href="#" class="imgplace"></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><img src="./img/cast-text.png" alt=""></h5>
+                        <h4 class="gadname" href="">Microphone</h4>
+                    </div>
+                </div>
+                <div class="card pulsefire col-xl-3">
+                    <a href="#" class="imgplace "></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><img src="./img/surge-text.png" alt=""></h5>
+                        <h4 class="gadname" href="">Gaming Mouse</h4>
+                    </div>
+                </div>
+                <div class="card col-xl-3 fury">
+                    <a href="#" class="imgplace"></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><img src="./img/fury-text.png" alt=""></h5>
+                        <h4 class="gadname" href="">Gaming Rug</h4>
+                    </div>
+                </div> 
+                
+                
+                
+            </div>
+            <div class="raw gr d-none soloraw animate__zoomIn">
+
+                    <div class="card col-xl-3 core">
+                        <a href="#" class="imgplace"></a>
+                        <div class="card-body">
+                            <h5 class="card-title"><img src="./img/core-text.png" alt=""></h5>
+                            <h4 class="gadname" href="">Gaming Keyboard</h4>
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+        <footer class="d-none animate__zoomIn">
+            <div class="container">
+    
+            <div class="raw">
+                <div class="col-xl-4 text-left">
+                    <h2 class="foot-title" style="color:magenta">OneParadise</h2>
+                    <p>Made for <span style="color: #ffb600">IT-Park Competition</span>, Uzbekistan</p>
+                    <p>Made with <i class="fas fa-heart" style="color:magenta"></i> by Sultan</p>
+                    <img class="foot-logo" src="./img/icon.png" alt=""> <span class="foot-lt">ARADISE</span>
+                    
+                    
+                </div>
+                <div class="col-xl-4 text-center">
+                    <h2 style="color: magenta; text-align: center;">Awarded</h2>
+                    <p>Nominated <span style="color:#ffb600"> #1</span> out of 52 web-sites.</p>
+                    <p>Best Landing Page</p>
+                    <p>IT-Park Diploma</p>
+
+
+                </div>
+                <div class="col-xl-4" style="text-align: center;">
+                    <h2 style="text-align: center;">Sultonbek Khamidov</h2>
+                    <h6>Tashkent, Uzbekistan</h2>
+                    <img src="./img/signature.png" alt="">
+                </div>
+            </div>
+        </div>
+    
+        </footer>
+    </section>
+    
+   
+ 
+
+
+
+<button class="btn-lg js-btn-top"
+    <img src="./img/arrows.png" width="65px" alt="">
+</button>
+
+
+    <div class="libs">
+        <script src="https://kit.fontawesome.com/74737027d2.js" crossorigin="anonymous"></script>
+        <script src="./jquery-3.6.0.min.js"></script>
+        <script src="./jquery.to-top.js"></script>
+        <script src="./jquery.scroll-to-id.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.js"></script>
+    <script>
+        Splitting();
+    </script>
+    <script src="./loadanimations.js"></script>
+   
+    </div> 
+    </div>
+
+</body>
+</html>

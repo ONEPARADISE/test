@@ -1,0 +1,124 @@
+@media(max-width:1200px) {
+    .hpng {
+        width: 0;
+    }
+
+    .navbar {
+        opacity: 0.8;
+        background-color: #000000;
+    }
+    .nav-item {
+        margin-bottom: 15px;
+    }
+
+    .dload {
+        padding: 0;
+        border: 0;
+    }
+
+    .home img {
+        width: 300px !important;
+    }
+
+    .home a {
+        font-size: 18px ;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .socials h3 {
+        font-size: 14px;
+    }
+   .divider {
+       display: block;
+       margin-bottom: 20px;
+   }
+   header {
+       padding-top: 0px;
+   }
+    
+   section {
+       padding-bottom: 60px;
+   }
+
+   .sultan {
+       display: inline-block;
+       width: 250px;
+       height: 250px;
+    margin-bottom: 30px;
+   }
+   
+   .secimg {
+       width: 150px;
+       margin-bottom: 0;
+   }
+
+   .main {
+       display: block !important;
+   }
+
+   .title {
+       display: none;
+   }
+
+   .after-text h2 {
+       font-size: 36px;
+   }
+
+   .after-text h3 {
+       font-size: 18px;
+   }
+   .progress {
+       height: 6px;
+   }
+
+   .block-1 {
+       margin-bottom: 0;
+   }
+
+   .rawtitle {
+       font-size: 42px;
+   }
+   .rawsub {
+       font-size: 22px;
+       position: relative;
+       top: 0;
+   }
+   .raw {
+       display: block;
+       margin-bottom: 0;
+   }
+   .soloraw {
+       margin: 0;
+   }
+   
+   .gadgets .secimg {
+       width: 200px;
+       margin-bottom: 30px;
+   }
+
+   .gadgets .card {
+       margin-bottom: 30px;
+   }
+
+   .music {
+       display: none;
+   }
+
+}
+
+@media(max-width:1600px) {
+    .home img {
+        width: 450px;
+    }
+
+    .home h3 {
+        font-size: 22px;
+    }
+
+    .home a {
+        font-size: 22px;
+    }
+}
